@@ -1,0 +1,2387 @@
+{
+	"info": {
+		"_postman_id": "a3cd812b-f459-4651-8dca-6dbd10bdc7a2",
+		"name": "DigitalTwin Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Building",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU4MjI0LCJuYmYiOjE1NzgyNTgyMjQsImV4cCI6MTU3ODI2MjEyNCwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQXQ2U3pmeGw3VmlpRWR2SkRRQk5icUlCZTJuV2xxajhvVTlvSXhLYjBueFFjZVRweGVsYWtVZG5CK2ZreXVBWURzczZPb0k0VTFxeGNIeEFTZ2l1NEx3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IldGLTN3MWVaNFVxQkJzRWl4bkN3QUEiLCJ2ZXIiOiIxLjAifQ.wIxTo2MynoeOfXkTUCZeq2oc2YC3LDDuDH-fVbuQlFF4yOwhDecL7UXt7GnE4UL4mCaTTUp9LbfwHd3Y6BY993Vf_WgmCGU_vwyVHRzLtPtWH7QiNl6I9Bctzb1FiKqkwuho1eLvcTwb0hm8PUxlUhNgpQAIZqvEZ6-ChSxpv9j9Z0fp7x6N2lTOueZzoHCxVS60OKR3kyhqBpZzVhuw5qi_WwMABdmKB5ivvRUzO3qfvgTQv1al9Gh5jyL6aFIFo24tOk7KhJMwbq1kHUsjrlDABMtfyux-eBXMcPskD30pv9zt9nn-KWeSLgvQ7iD8p53sOXhOtkATYtjHYOFY8g",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Beeah Head Quarters\",\r\n  \"description\": \"This is the Headquarter buiding\",\r\n  \"friendlyName\": \"HQ1\",\r\n  \"type\": \"VENUE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces?includes=values",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					],
+					"query": [
+						{
+							"key": "includes",
+							"value": "values"
+						}
+					]
+				},
+				"description": "This adds a building by calling space api"
+			},
+			"response": []
+		},
+		{
+			"name": "Update a  Building",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU4MjI0LCJuYmYiOjE1NzgyNTgyMjQsImV4cCI6MTU3ODI2MjEyNCwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQXQ2U3pmeGw3VmlpRWR2SkRRQk5icUlCZTJuV2xxajhvVTlvSXhLYjBueFFjZVRweGVsYWtVZG5CK2ZreXVBWURzczZPb0k0VTFxeGNIeEFTZ2l1NEx3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IldGLTN3MWVaNFVxQkJzRWl4bkN3QUEiLCJ2ZXIiOiIxLjAifQ.wIxTo2MynoeOfXkTUCZeq2oc2YC3LDDuDH-fVbuQlFF4yOwhDecL7UXt7GnE4UL4mCaTTUp9LbfwHd3Y6BY993Vf_WgmCGU_vwyVHRzLtPtWH7QiNl6I9Bctzb1FiKqkwuho1eLvcTwb0hm8PUxlUhNgpQAIZqvEZ6-ChSxpv9j9Z0fp7x6N2lTOueZzoHCxVS60OKR3kyhqBpZzVhuw5qi_WwMABdmKB5ivvRUzO3qfvgTQv1al9Gh5jyL6aFIFo24tOk7KhJMwbq1kHUsjrlDABMtfyux-eBXMcPskD30pv9zt9nn-KWeSLgvQ7iD8p53sOXhOtkATYtjHYOFY8g",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Beeah Head Quarters\",\r\n  \"description\": \"This is the Headquarter buiding\",\r\n  \"friendlyName\": \"HQ1\",\r\n  \"type\": \"VENUE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces?includes=values",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					],
+					"query": [
+						{
+							"key": "includes",
+							"value": "values"
+						}
+					]
+				},
+				"description": "This adds a building by calling space api"
+			},
+			"response": []
+		},
+		{
+			"name": "Creates a property key",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4NDAyMDExLCJuYmYiOjE1Nzg0MDIwMTEsImV4cCI6MTU3ODQwNTkxMSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUpyK2Z4WFk3ZHEyRHdOSENrbThhazVYTnNyWGZZbUprYXpTSU0xMGZJbXo1dFg5Vk00cG4vQTNhcnVsUzRDb0g5dU1jSFZ0Z1oyaWVhKy9FSnV4OUtBPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU5LjExNiIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IlF6Rms5UlZQcDBpYVNrcHVoRVNuQUEiLCJ2ZXIiOiIxLjAifQ.IvZnJPB29brLknTQzhd87E4PodZM6o0JR66VwnpIKWBpisbI2sc33j-zpROR6k3KPMa4ROv6wlrmNBhDc1SS4-P_2BeW4-mhVcbiIgz3QnqOaD4io3M4nR3f7-hloCfCmnsZGrew1ttSQLmjzInf7I5DNbG112x93frJJsNs77AMqR6K1-0-pmWeuZ-GZ3j7f8LTES4gnEEEi62s_-tYYVbhKT5l2RYM8dQg2eZOGyuOwcF4534Fx-LgACRh_EGjWe2PcwT3VrfFVV6SvtJXoGEL9euyr8QGs-wwvntwaI1G-SQbUbnhVCpz6Wni3KdWSviO8PkPOmrhbBgI6bGWvg",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"dvid\",\r\n  \"primitiveDataType\": \"string\",\r\n  \"category\": \"DigitalVault\",\r\n  \"description\": \"Digital Vault ID\",\r\n  \"spaceId\": \"5e0d343b-7868-4959-914f-0b2a2df48376\",\r\n  \"scope\": \"Spaces\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/propertykeys",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"propertykeys"
+					]
+				},
+				"description": "This adds a building by calling space api"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Spaces",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MzA3OTEyLCJuYmYiOjE1NzgzMDc5MTIsImV4cCI6MTU3ODMxMTgxMiwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUdtemhaY3RvTWl4dWZhMkJSNDFsRFU0RXpGdnVTdlZwZFp6MWh5UzhrUDlSWXM3ZUpmbzFpU0g1QnQ3dDdhTGZCcmJkcEJ4N1RiZVdkU2IzUURGL1dBPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6ImlhWWd6cjhuZmtDNGdMWnRBdDVyQUEiLCJ2ZXIiOiIxLjAifQ.PPq3hOokbMd1EP63D9tgc2Xg5LVRkMrFR4ngdovaQDaSWkA6p0CpAgmAQwvI1rHFNG9TlozDk5nyXF2TJ6er5iStYJeSeh0R3cRHXZ-KrDWy9hu9WvVGPpGC1btFzoKGgZDZ2-fQDX3oTEFUwpkFUjSpeq2BbaAAEZnZnBYO2IIOPoDYKbMVNqVd_rubqW0emnepqiXI4aPB3ClS6oCB0JkfrYln7Qnn2thd7c5DR8kamJSwgtFOHrLZ4qArNjEEKL4PtjQ6KzZ0hUTwb_g-aitFYmRNHCdPm5Lgz_NecMmHjHAcb9cRRrq3ImJ9iqRF6SaFiBHF3H4TXKecxScHGQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					]
+				},
+				"description": "This adds a building by calling space api"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All types",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MzA3OTEyLCJuYmYiOjE1NzgzMDc5MTIsImV4cCI6MTU3ODMxMTgxMiwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUdtemhaY3RvTWl4dWZhMkJSNDFsRFU0RXpGdnVTdlZwZFp6MWh5UzhrUDlSWXM3ZUpmbzFpU0g1QnQ3dDdhTGZCcmJkcEJ4N1RiZVdkU2IzUURGL1dBPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6ImlhWWd6cjhuZmtDNGdMWnRBdDVyQUEiLCJ2ZXIiOiIxLjAifQ.PPq3hOokbMd1EP63D9tgc2Xg5LVRkMrFR4ngdovaQDaSWkA6p0CpAgmAQwvI1rHFNG9TlozDk5nyXF2TJ6er5iStYJeSeh0R3cRHXZ-KrDWy9hu9WvVGPpGC1btFzoKGgZDZ2-fQDX3oTEFUwpkFUjSpeq2BbaAAEZnZnBYO2IIOPoDYKbMVNqVd_rubqW0emnepqiXI4aPB3ClS6oCB0JkfrYln7Qnn2thd7c5DR8kamJSwgtFOHrLZ4qArNjEEKL4PtjQ6KzZ0hUTwb_g-aitFYmRNHCdPm5Lgz_NecMmHjHAcb9cRRrq3ImJ9iqRF6SaFiBHF3H4TXKecxScHGQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					]
+				},
+				"description": "This adds a building by calling space api"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletes a space and its children, such as devices, sensors, users",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjkwMTQzLCJuYmYiOjE1NzgyOTAxNDMsImV4cCI6MTU3ODI5NDA0MywiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUZWNUtocVF0KzhqVTY4Nk41dTF1VTlaeUVaQjQwdmZJRjY2dENUVEgwa2RjR0RGNUpTVlRGc21mZWNtbC9UVUN5Q0V5TXMxaUlKblQ3cVhUUGpGZDNRPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IlBnMFVJQ05QNFVxUzRIbUt2VjJ1QUEiLCJ2ZXIiOiIxLjAifQ.b5ciCireTT7Ggjg94OF2uopqDJeRdjW5wND39Nez6g3F4sqjy5C8NhNkFoJ_yp3vYA_eHzIFhcUqOmSOY2YwP3tpmmuj8eCT41i1FQZ_dMYZB_KTavoYU64EmJ0fWqrNCMoL1i5Blo-bQGxO5Zpez3nChOSO9Li2JxR8lHrEzNtCqhhg23eeGu4D48F2v6NPy_ngfpAcmnpZ6FAJu1p2dtmhLIyPkSazIJYc7DIordAtYyAgK1vv0m-kh61idYcl9MNDegDzc9aiZLnj0LSlMH0nilauSwPBYG1kAseXmBi5T_UUVtarMEAJmxB1VS1_ClBy1vgxl1JT-4OVOwxZ2A",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces/4acf0345-b081-4e85-825c-d115c0712924",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces",
+						"4acf0345-b081-4e85-825c-d115c0712924"
+					]
+				},
+				"description": "Find all spaces."
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Buildings",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MzA2Mzg4LCJuYmYiOjE1NzgzMDYzODgsImV4cCI6MTU3ODMxMDI4OCwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQVo2VFRyZ3RwelZsUHB0NFN6Q0t6cXp4UjNleG01NlJnK2RvOVB0R1IydW1ZK2ViMXN4T1FrTXdFd1NnZ28vZHdvMHRGWTFlL0pXYUJrR29ZaGhDb0t3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IlhBT2ZBWE13S0VHaWo1WjFFdU54QUEiLCJ2ZXIiOiIxLjAifQ.H-68hX_4Mk7Z6fhoZQsw31BJL0npvIY2aN7PSC1l2ozNCSRV7FOBvGxKmbY53HYlHb_J0unjx0iJca7iYqt4Feu9aEK0kr-I2EKmOJYsl_rVWqqM-JuClnrz3Co25zjuiFh5ikbmoa4-1aIX26KKBWQmm5B7w_DgEwj7wj2bQRnKygM0FN2QjioD63mNw0hbRq3FJBd4WphjThACJMfwVuVyTCRkV9tQzcfLMM5hIF1Z50MRnlWGvV7pTsK5QyZrOF-y4Ef8n1weNNSafcUUFYcYEwX8PNQSApI9sQw2zVAoOMhGB_g-X6g-IQn9DbumISnvP4MtLdWI41yOXk2CqQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces?$filter=ParentSpaceId eq null",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "ParentSpaceId eq null"
+						}
+					]
+				},
+				"description": "Find all spaces."
+			},
+			"response": []
+		},
+		{
+			"name": "Get A Specific Building details",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU4MjY0LCJuYmYiOjE1NzgyNTgyNjQsImV4cCI6MTU3ODI2MjE2NCwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQWtEUEJEbWpaZEY2ZjA0Wi95a01KOWlJRTdzVFJCbU92L3V3SnRJWE5sTjQ4VUN2SU04YlZJNmROMXhWY2V3V1lOVjBRdElheU9zWDdYWlU3QW9GQ05RPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6InR1ei0tMW9lNzB5NTlFSXpqbkN3QUEiLCJ2ZXIiOiIxLjAifQ.vyTU3EwkDEW5-D29Y-XHDfb9KSwQFmhZ5g1D4Ms2Bpp49EKHCgnlw2jeRctcMJaq_LGSJ4Aut73SbpIuT3SW2rEH0UQRfNqRwPMC0J0aLjiz7mqZyM1mZvmB-s_F_ZQS4bITxBlrfr_4CSPw4e0spefcCvoQf2TrbzoQSx9m5iU-e-fklzDGuUA1W-_a667shXwD725_dr-UVlszbkrhJEqLsgBpdjopGqjS46TN4TWDrsfU2DTyGOMS4qf6PEi7SCLTsy1B5NScnEatfTfeTiv_08JS0d9d3gf2vmgsA7A9Gz4sOrVMTFpyaaRhbphjuGryvHvWpVIOPKpCx0cFrg",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces/d8aa20c8-e647-42c5-8ac6-0fd69ce7e401",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces",
+						"d8aa20c8-e647-42c5-8ac6-0fd69ce7e401"
+					]
+				},
+				"description": "Find all spaces."
+			},
+			"response": []
+		},
+		{
+			"name": "Create Resource",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjUyNjU5LCJuYmYiOjE1NzgyNTI2NTksImV4cCI6MTU3ODI1NjU1OSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUhERnJoNVNjaEVQNGZBSnUyKytoZ090dmI1RkpHbzNXVkNaNEFuVUZlV2VhQXRuaWlsZVZ6WjNxTk5NazRqY09yZXFrWFhJVUljNXc0emxRQVVVaUN3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Ilk2NTR3bEhVRTBLakxCczNLLXhRQUEiLCJ2ZXIiOiIxLjAifQ.zQGv2A3gyPEXGJQ4OTBG6jI5ree8pe3_grg18yNHs9jFWRBWSzRo2KUgq5AtnwlA5uj7HA9CKZ6MwfA_ot0x6U0FK71ijQRoZEOGEbLBPz8-LDhNZDwa8hfP8eQuwYw_LyqUgWKJu-HSf6K3Dtgc8Q0F5lzVL_RasF2rxDyem8pm_f9LM0j4dmbd3SMkHahdN1rnQBZgIGUes10P9ikJfdkPT0ilP0U4CGrCYriVhrveteO-Rf0knKVtIxULzUxFPmdoqE59jRXifz02x0GLTy-9tYU5I7qNhWKLQt7iqIcUxNGmBaR3v1VXBdzZRrtIVSPoLIa9gv127yUv9MRZ6g",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"spaceId\": \"f1c16408-fcba-4846-b975-18ad415fcef8\",\r\n  \"type\": \"IotHub\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/resources",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"resources"
+					]
+				},
+				"description": "Create teh resource undeer which all subitems will be placed"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Resource",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjkwMDgxLCJuYmYiOjE1NzgyOTAwODEsImV4cCI6MTU3ODI5Mzk4MSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQTg4bk1qK3U1UDRWbldxeDJwSHRkanoyRVFlaGhPU09FaTZvcXNFcEV4SUJCZ2dVdG9mb0MyK2NROW5WeHVSekk4OWRHRXJqQzF0bXdFaHRvNjlqSnNRPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IjE1OGluLXJnN0V5TE1Kc2Q0UE1qQUEiLCJ2ZXIiOiIxLjAifQ.q8ARTG6abMS5F3eSiFIJzgdbCb5Nu8Roe-Vhaqb4TV5hfuAWWJlKmRhiV8D29emZrPYoVO_-QAZCGbOkCqeO0q9Jw0OYQUECIhfKH5KxxPTAo7XboL3Olk85g1Qk1mrHKzanvR-ZGTm6LNWOMomGuEgPM_W96_xTjf5x8mBMfnwoerZoosa3QkjBCaYM5yBK--MRETdN4WPZRxxl1wBHkadztiRvOJ52HbV0ejfhu2a6bopX6UM8DVnPSkwd3pqndyE2FPeNlT8e15YYWpQU7hzNmG6rPnGqj61zH_FHXAbwkXymWx_6yGoPT3CD626FJID0cCYH2FnCH4UnRjoz8Q",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/resources",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"resources"
+					]
+				},
+				"description": "Create teh resource undeer which all subitems will be placed"
+			},
+			"response": []
+		},
+		{
+			"name": " Deletes the specified resource",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjkwMTE2LCJuYmYiOjE1NzgyOTAxMTYsImV4cCI6MTU3ODI5NDAxNiwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQWxVRE54VTJPYnFKczJWRTVvY1Y4UlE2SlpncmhhaDRMOS9XUEt5aFZaUzM4ZzRzQlZWUnE0cTZkdUVRRDRkSVY5ckVWOGVjUSt4VXdRN2wyRkZyMUp3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IjJPQWlRTEVUeUVtaEZnVkJuaXNhQUEiLCJ2ZXIiOiIxLjAifQ.Cc1iRtwgn_xVZdN-vAC7G3bPLT1FwzJMr2NYRZoccM9hwIufvxL2LfAOr33XM6Ci7Rz8ZH8Pnehd9xAwb8n2HXH81C2fcEuRpER3y-pEHwxtS2k9pfMP-PmPmxcg8nkc3nMnzD839ig-x9BDwheg-8pqufnJ-ufgfg9pqF7VFjR_kMjSznnuDXdq68ZlFBQUOOD39Un04b2GaWXANsvQWpFZ2_a3E2mQ45J1BakY2C-HUX4khYJ_t4MJYJAK4flVzDSeKydSPze6LfOg9XTccUNdSZK72p6NsiTzeuuIQV-K90n0Uppk2oBgztRdf__iYFyk0SKZWLocjDh7eF4SIw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/resources/5d306d35-6922-44b9-bdfc-5fef5a52983e",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"resources",
+						"5d306d35-6922-44b9-bdfc-5fef5a52983e"
+					]
+				},
+				"description": "Deletes the specified resource like IOT"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Floor ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"First Floor\",\r\n  \"description\": \"This is the first floor of Headquarter buiding\",\r\n  \"friendlyName\": \"HQ1F1\",\r\n  \"type\": \"Floor\",\r\n  \"parentSpaceId\": \"f1c16408-fcba-4846-b975-18ad415fcef8\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Floors",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MzA4MjE5LCJuYmYiOjE1NzgzMDgyMTksImV4cCI6MTU3ODMxMjExOSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUVoTldJU3Y2WnYwTll5dUw1T2ROQTRVNEk0czNldmV5Ukt0eUNSQ0hmNzdUUmFtS3Q3K1Y5UEpCcVpMLzZXdGtpaGg0ZjRKQ1B3ZzM4M1ZCaHAxUEtBPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU5LjM2IiwibmFtZSI6InNha3lhc2luZ2hiaXN3YWwiLCJvaWQiOiJjMWUwYjY0Mi05Yjg2LTQ0N2UtYmM0ZS0zMWVlODg2ZjQ1MTciLCJwdWlkIjoiMTAwMzIwMDA5Mzg2NUEzNiIsInNjcCI6IlJlYWQuV3JpdGUiLCJzdWIiOiJXLUJlZlA2Wm9aZjBHMFZwYzZaM2d2TWN4eUpMNDRObjkzb3kyNjRMXzEwIiwidGlkIjoiNWI3ZWZkZjUtYzBlZC00MDI0LTg1MDgtOTY2ODIxYTJlYjI5IiwidW5pcXVlX25hbWUiOiJsaXZlLmNvbSNzYWt5YXNpbmdoYmlzd2FsQG91dGxvb2suY29tIiwidXRpIjoiM2wyckVvRWJTa1dSMGNZNG9DVFJBQSIsInZlciI6IjEuMCJ9.DPGdRNFQz3-ONsa3fbkxgXU43E28RrWGNO0mwCGFnImuqjABdhL-VVsqhWN54E2L90OakxC30w5lpCYt6CU6p--5l5h2TYsr_RWtFbKriPIMNAHjY5TJq_eUDQNYRHofsW0pGZ98gmWuOi9CclWYRTLpmVcjE__9n0zKG7ugvBw69OEWB7Ag3iflJhCXy2oUi1JJRdzU-S-s8rZ2OzuAyeYjn_gmZdOSchIEvTN3gFdgHdmvzE1G2IgyvWbMiAJV40TMGQ0ZABLyYcX2h64xi4i2dF7ZRM-UF_R-iAmuCPkiKoJi8zjjGez6oAsiApsVldR83OpDaeVMIPxo_soWTA",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces?types=Floor",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					],
+					"query": [
+						{
+							"key": "types",
+							"value": "Floor"
+						}
+					]
+				},
+				"description": "Find all spaces."
+			},
+			"response": []
+		},
+		{
+			"name": "Deletes a floor and its children, such as devices, sensors, users Copy",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjUyNjU5LCJuYmYiOjE1NzgyNTI2NTksImV4cCI6MTU3ODI1NjU1OSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUhERnJoNVNjaEVQNGZBSnUyKytoZ090dmI1RkpHbzNXVkNaNEFuVUZlV2VhQXRuaWlsZVZ6WjNxTk5NazRqY09yZXFrWFhJVUljNXc0emxRQVVVaUN3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Ilk2NTR3bEhVRTBLakxCczNLLXhRQUEiLCJ2ZXIiOiIxLjAifQ.zQGv2A3gyPEXGJQ4OTBG6jI5ree8pe3_grg18yNHs9jFWRBWSzRo2KUgq5AtnwlA5uj7HA9CKZ6MwfA_ot0x6U0FK71ijQRoZEOGEbLBPz8-LDhNZDwa8hfP8eQuwYw_LyqUgWKJu-HSf6K3Dtgc8Q0F5lzVL_RasF2rxDyem8pm_f9LM0j4dmbd3SMkHahdN1rnQBZgIGUes10P9ikJfdkPT0ilP0U4CGrCYriVhrveteO-Rf0knKVtIxULzUxFPmdoqE59jRXifz02x0GLTy-9tYU5I7qNhWKLQt7iqIcUxNGmBaR3v1VXBdzZRrtIVSPoLIa9gv127yUv9MRZ6g",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces/{ID}",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces",
+						"{ID}"
+					]
+				},
+				"description": "Find all spaces."
+			},
+			"response": []
+		},
+		{
+			"name": "Create An Area on a Floor",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU2NjE1LCJuYmYiOjE1NzgyNTY2MTUsImV4cCI6MTU3ODI2MDUxNSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQXRZNDMwbnZrZzRwelNNdml1T1JpVTgrc3dzTlpTNnUzeE4raTZYYVZRdHNzTHlCWW5lOWc0OVp5OER4dzlwMzM0OTFIZGdFZ25vbWFYcENWUXE1bldnPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Ik5kM2I4Sm53aUUyelFRVTlKbElTQUEiLCJ2ZXIiOiIxLjAifQ.mcBkLDTpDdukh3AD4yLZ8CWF5hOtes_RhoTMCmuyLfqjen8aSDDo2OLAIl-NJXdj4n7B_srMoWUUEB_uXmetJjs6B6qmeOksls6WKQwZtcqSTNOgNzZpN4mbv5_L60weIo4p18FSBOR-M6Aub0ZssGRIXJzTZ27IIZprSVfgGZmJdMV1ywhqxqpZUBddkVWSHAtSce83NSFABOdN_lbGtlF7bbxBGWgRAXLXqAUcKF97d1ISRaFSrWesGxwCM3BgMaOUH2IvFMBUxheT-KqRuqLyA887--Om9szBQf50ZCEL__eNRlSwSadA8UUE02odH4bS2o3mS2uqt5M4ylZ5MA",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Public Area\",\r\n  \"description\": \"This is the public area of second floor of Headquarter buiding\",\r\n  \"friendlyName\": \"HQ1F2A3\",\r\n  \"type\": \"Area\",\r\n  \"parentSpaceId\": \"ecd65577-6374-42d1-ab37-9e58687a3fbc\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Areas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU2NjQyLCJuYmYiOjE1NzgyNTY2NDIsImV4cCI6MTU3ODI2MDU0MiwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUovMXFZQ25Dd1VJN3drU2R6YVFPNEZFQVUydTIzMDZBRVlienpQNER3VTVlWGJwT1JjZEZOSUNFRDBwL0tWUmhGVkU2bkRJOHo1OEVKdk0rYW5vMFRRPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IjBXdHpOelVnQWsycWNIUW1jUGFuQUEiLCJ2ZXIiOiIxLjAifQ.alH7Ya0_6CGDkxFq1bgRj0XYJUpb1Zrm131BMUdXbyY7uT0JBdRqCAVP2EZRiaM7FWhoHtDzuIPR0JAoEL4UlTrx-bIv0qhU4f_6KKfW19nJcN3EiZ1INJxInUplY0veKHW3qvGFnbR_f_aFk3OsR7arKrWGx2bfxMRwFe60Ps2mdZW-0dhkft64uDS072_g-4iFNT5eY1JhiYt9P0Di6zC_VAXubHIPPK49sfiUQwjBEdKpIgscUhgp0LEckU4cTqgNZM3B2lZDn_9Iq5BOxRM2NWOwwRDC8GiTHRdWZKup3sb8BfNrYw5Rr_UsYlp0jVkDqHL6XsIFkijhKqyFqQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"First Floor\",\r\n  \"description\": \"This is the first floor of Headquarter buiding\",\r\n  \"friendlyName\": \"HQ1F1A1\t\",\r\n  \"type\": \"Area\",\r\n  \"parentSpaceId\": \"f1c16408-fcba-4846-b975-18ad415fcef8\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces?types=Area",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					],
+					"query": [
+						{
+							"key": "types",
+							"value": "Area"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete An Area By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces/{ID}",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces",
+						"{ID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create A Room In a specific Area",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU2NDQxLCJuYmYiOjE1NzgyNTY0NDEsImV4cCI6MTU3ODI2MDM0MSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUJFYWFYWXNRSnp3ZnFGY0ZDZHIwUExMS1dzREJOa2g4KzFlV29WZmIvd0FjdFRjV2ZFWEhKRFB2TXlCRi9PeWtmalRqYjh2dmg1aGNkWWV6WmFWeklRPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Im5Gc2x5aDg4MEVHaDdsUF9pR0FOQUEiLCJ2ZXIiOiIxLjAifQ.ShcbjO7lVX1eVOtBkszivSKtsKuA6oYmyi1XVVgYewuOTqENYsuCCviuHa9vOtF7pwr3q9h1phWTdMuKTZuaX9kwcVzdbFb5V8gr4hvC2S7rVquNzRqsKoYnHIMDGSQqsmWn6Mp1XEqwUaSn08SYl0rIjE4TZpbtfR_iAkPAsH7FbhzHVRe-1qyMoccc5hCwbZKtdeFgLOP1bsrVgfDTtI6UTEuY6uP2qq_Hpns88IHK9xthrzJrxyprTFUi_IrNQ_45CrM70Ft0wkTWhIkBjiK_Hmn90_O1y1-xf4WxJaafK7DzEkuqbYSFDsjp14ts0GgI4pidB6juhRnhIiTKWw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Conference Room\",\r\n  \"description\": \"This is the conference room for emplyees\",\r\n  \"friendlyName\": \"HQ1F1A2R2\",\r\n  \"type\": \"Room\",\r\n  \"parentSpaceId\": \"a7e3a2d2-0c2f-41f1-b161-649cf1820f66\",\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					]
+				},
+				"description": "Create A Room In a specific Area"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Rooms",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4NDkxNzY4LCJuYmYiOjE1Nzg0OTE3NjgsImV4cCI6MTU3ODQ5NTY2OCwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQVdEdWhnWU4xUWVvMXpDSFVZYmd1aTRnQzdvY29Ja1gzdytxM0I5MDFVR040WjEwbHBPR05ERU9iSVhPL1dmanE3Wk91MHhpVFVweGpZUVkxU1A2S21RPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjYwLjM1IiwibmFtZSI6InNha3lhc2luZ2hiaXN3YWwiLCJvaWQiOiJjMWUwYjY0Mi05Yjg2LTQ0N2UtYmM0ZS0zMWVlODg2ZjQ1MTciLCJwdWlkIjoiMTAwMzIwMDA5Mzg2NUEzNiIsInNjcCI6IlJlYWQuV3JpdGUiLCJzdWIiOiJXLUJlZlA2Wm9aZjBHMFZwYzZaM2d2TWN4eUpMNDRObjkzb3kyNjRMXzEwIiwidGlkIjoiNWI3ZWZkZjUtYzBlZC00MDI0LTg1MDgtOTY2ODIxYTJlYjI5IiwidW5pcXVlX25hbWUiOiJsaXZlLmNvbSNzYWt5YXNpbmdoYmlzd2FsQG91dGxvb2suY29tIiwidXRpIjoiZ0F1MDJ4clR6MDJhaUhHTkMwNllBQSIsInZlciI6IjEuMCJ9.vuThnIsmvMkv_RwDRZ9wRvWb9iPZoHVHuE9UyYkR_NvOTwHXxJrsE9CDP0reZG9oNU_tgFIcWraZVbcqtm0xHhFN25tKMf04ozxT2CgIhmoxueRg7PTHqfZMk0WLoP-uAffZTkAV7o_z9XW5InM-mh2p_LDIRorQ_sQs6uhAtlAzWRQ9AgHrsn23z7RJMuM6yrZSn_rITfGflMgvMJEBT1hU77wGaST5E7suVNU5R_jxOVD09g9yTZnOrY04y0iq0bspuLyruJXIgJB3FzqNHYQ4yH8XqEb_OiGnGq6Jpxe96JzajzSAQXfkUpdTUiEnu5LfVnB9gnqza0q6sg0ksw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces?includes=Resources,Sensors,SensorsFullPath,Values,SensorsValues",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					],
+					"query": [
+						{
+							"key": "includes",
+							"value": "Resources,Sensors,SensorsFullPath,Values,SensorsValues"
+						}
+					]
+				},
+				"description": "Create A Room In a specific Area"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Device",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU3MTMxLCJuYmYiOjE1NzgyNTcxMzEsImV4cCI6MTU3ODI2MTAzMSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQXMzdm9TVmNUYWg3alowNkxFelJZY2l5WGR5bC9TZWNsM2xCZTNnVlhPRkZYaDVLYUwzRmNXL2VMdWhQSGRPUDhKck9DZXlMNlhXWm05ZC9nYVVCYlRBPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Imp3QVVxVFNjREVlUFNkakNlVmVoQUEiLCJ2ZXIiOiIxLjAifQ.yfbC5DjUGNTSld4oY0wbqLmhc_SpCce5nkEoyFGdfL76yIe6rAfQtPq2SWqFccK61ObpBN93dAjyAVHj57eIZ3ER28EvmJSf5WlWf2IacvItL_oO85QA_viP9ezHt_Zom7watu-2ex1TNeAWSufo6Qq88LLfg1OUs0if2DF7Ungt8o3hCGqfedNlmiC91QHuMf8BB1zIE3UwKFmVfwzxdmtP5C_EFHUs7Jbb3yO-7ey51sLW4vQY8oC-hPxhNT3WVowL4Pv5qia7rFQHv9oZO1sL0OngWHDwNKU0xDafJj6oryDlucPYEI2ElDtx-jKvZfvGDKRC1ICU7t8_6jdVQQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Card Reader\",\r\n  \"friendlyName\": \"Card Reader in Conference room\",\r\n  \"description\": \"Thermostat in the first floor Conference room\",\r\n  \"hardwareId\": \"001247\",\r\n  \"spaceId\": \"97f43aed-f512-44a3-b01d-7ce176350139\",\r\n  \"status\": \"Provisioned\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/devices",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"devices"
+					]
+				},
+				"description": "Create device in space"
+			},
+			"response": []
+		},
+		{
+			"name": "Gets a specific device with Connectionstring",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU3MTUyLCJuYmYiOjE1NzgyNTcxNTIsImV4cCI6MTU3ODI2MTA1MiwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQWUrYUFWZiszS3B3UitCV0VBSmFUa1NGeFJxbVcvYXlvaEQ4bEFvOHlEZERwTDBXbGRKbmhjQjZ3MEQ1OHZia3dMVUhSODhPVDg0R2I3SVBqNU55ckxnPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Im45Tk9LY0htVkVtbnJZLUFBZS1tQUEiLCJ2ZXIiOiIxLjAifQ.ftN06JjxB37AxwC0LqYRqGWrIIa6d8i9AoIPF6Q5b3eeKAFfjHJg6jRwcJJBHQ4JjPuHZvUibJDkfhJkMwHHaAGn7dO_YUi_8fsSioJMtXHh65b-8d07jIkNbXHpFPsdeAYt5_PQE5WZxr-U9Ece2rMSRDFVnbriV_0In8-EK573wrEi4vCpbsHgTQNUhFR5-JidZ0CY6sEnh5jY4NV-9YuViw4EANl_yJvyzIB7HWbY2ZH8fKkB_lUSdg_Tm-0kTa4GIkA3frHeUSxcjH6KDe3GCJiSbJCNUzZMIPzg0lhFqDaBlWiiXy_nwwta-DIDLQuwaLfex_9A5c8Y_VLH8w",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "includes",
+						"value": "values",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/devices/617a5e2a-d8e7-4103-ad9d-83c7f1d3906b?includes=ConnectionString",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"devices",
+						"617a5e2a-d8e7-4103-ad9d-83c7f1d3906b"
+					],
+					"query": [
+						{
+							"key": "includes",
+							"value": "ConnectionString"
+						}
+					]
+				},
+				"description": "Create device in space"
+			},
+			"response": []
+		},
+		{
+			"name": "Gets All devices",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MzE1NjQwLCJuYmYiOjE1NzgzMTU2NDAsImV4cCI6MTU3ODMxOTU0MCwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQVR1OGRhVUFJWE04S3FQS25CMEFVK3V3L3JQaDN5MFUvaHQ2Q3o4S2c0SkpxQmF4OEJ6N1NKYzdLTldIMFZwazkyWkttOC9nT0J5QUpYeVpWRnk0OVNBPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU5LjM2IiwibmFtZSI6InNha3lhc2luZ2hiaXN3YWwiLCJvaWQiOiJjMWUwYjY0Mi05Yjg2LTQ0N2UtYmM0ZS0zMWVlODg2ZjQ1MTciLCJwdWlkIjoiMTAwMzIwMDA5Mzg2NUEzNiIsInNjcCI6IlJlYWQuV3JpdGUiLCJzdWIiOiJXLUJlZlA2Wm9aZjBHMFZwYzZaM2d2TWN4eUpMNDRObjkzb3kyNjRMXzEwIiwidGlkIjoiNWI3ZWZkZjUtYzBlZC00MDI0LTg1MDgtOTY2ODIxYTJlYjI5IiwidW5pcXVlX25hbWUiOiJsaXZlLmNvbSNzYWt5YXNpbmdoYmlzd2FsQG91dGxvb2suY29tIiwidXRpIjoiT2I3dUNERlVXME9jeUo1bGRBd3hBQSIsInZlciI6IjEuMCJ9.RAz943NVrPslKldev7YNCSPPPrrRFbePbE1l6mStffVajyHcupH-bRp4fMOsTirABmQWh5ZICv9RVXAUoFrH8vEijKCdAEWuXxAJ7hPyEeE-uuk_jxL3vkTJCZTckLnoVAlRk1mhPQVail17WuzjEFmaF-hS2dIu4g-7GyIsiM-mwuh3NtB-SxP5Ss7ALoJaymGZzzf7-kDofulmb9YY3tWENgRz72lOKdUzsdVOAB1CKnH-WQWysJoie7XWm_ZBPgvoaN3VZJcBC_xpF6vx7_7pgs_7GFntxJIfTpr6frIABET_fzNc7xPLHSLOuoMUswG26jc4SdkVpux8_FETGw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "includes",
+						"type": "text",
+						"value": "values"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/devices?includes=properties,types,sensors,sensorsproperties,sensorstypes",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"devices"
+					],
+					"query": [
+						{
+							"key": "includes",
+							"value": "properties,types,sensors,sensorsproperties,sensorstypes"
+						}
+					]
+				},
+				"description": "Create device in space"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletes a device and its children such as sensors, blobs",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU3MTUyLCJuYmYiOjE1NzgyNTcxNTIsImV4cCI6MTU3ODI2MTA1MiwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQWUrYUFWZiszS3B3UitCV0VBSmFUa1NGeFJxbVcvYXlvaEQ4bEFvOHlEZERwTDBXbGRKbmhjQjZ3MEQ1OHZia3dMVUhSODhPVDg0R2I3SVBqNU55ckxnPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Im45Tk9LY0htVkVtbnJZLUFBZS1tQUEiLCJ2ZXIiOiIxLjAifQ.ftN06JjxB37AxwC0LqYRqGWrIIa6d8i9AoIPF6Q5b3eeKAFfjHJg6jRwcJJBHQ4JjPuHZvUibJDkfhJkMwHHaAGn7dO_YUi_8fsSioJMtXHh65b-8d07jIkNbXHpFPsdeAYt5_PQE5WZxr-U9Ece2rMSRDFVnbriV_0In8-EK573wrEi4vCpbsHgTQNUhFR5-JidZ0CY6sEnh5jY4NV-9YuViw4EANl_yJvyzIB7HWbY2ZH8fKkB_lUSdg_Tm-0kTa4GIkA3frHeUSxcjH6KDe3GCJiSbJCNUzZMIPzg0lhFqDaBlWiiXy_nwwta-DIDLQuwaLfex_9A5c8Y_VLH8w",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "includes",
+						"type": "text",
+						"value": "values"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/devices/a7c48a51-1c3d-41ad-adc6-c87bfa976503",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"devices",
+						"a7c48a51-1c3d-41ad-adc6-c87bfa976503"
+					]
+				},
+				"description": "Create device in space"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Sensor",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjUyNjU5LCJuYmYiOjE1NzgyNTI2NTksImV4cCI6MTU3ODI1NjU1OSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUhERnJoNVNjaEVQNGZBSnUyKytoZ090dmI1RkpHbzNXVkNaNEFuVUZlV2VhQXRuaWlsZVZ6WjNxTk5NazRqY09yZXFrWFhJVUljNXc0emxRQVVVaUN3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Ilk2NTR3bEhVRTBLakxCczNLLXhRQUEiLCJ2ZXIiOiIxLjAifQ.zQGv2A3gyPEXGJQ4OTBG6jI5ree8pe3_grg18yNHs9jFWRBWSzRo2KUgq5AtnwlA5uj7HA9CKZ6MwfA_ot0x6U0FK71ijQRoZEOGEbLBPz8-LDhNZDwa8hfP8eQuwYw_LyqUgWKJu-HSf6K3Dtgc8Q0F5lzVL_RasF2rxDyem8pm_f9LM0j4dmbd3SMkHahdN1rnQBZgIGUes10P9ikJfdkPT0ilP0U4CGrCYriVhrveteO-Rf0knKVtIxULzUxFPmdoqE59jRXifz02x0GLTy-9tYU5I7qNhWKLQt7iqIcUxNGmBaR3v1VXBdzZRrtIVSPoLIa9gv127yUv9MRZ6g",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"deviceId\": \"d2e1fe29-52d0-41f3-9bd5-207d4224482b\",\r\n  \"dataType\": \"Temperature,\r\n  \"hardwareId\": \"SAMPLE_SENSOR_TEMPERATURE\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/sensors",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"sensors"
+					]
+				},
+				"description": "Create device in space"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Sensors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MzE1ODM3LCJuYmYiOjE1NzgzMTU4MzcsImV4cCI6MTU3ODMxOTczNywiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQTcxSzh3cDhhNmRYYVlrYkdlSHcxZGI5YlJvY01zNWdRR0xvU3hPWHh4V2NmSUx2anVidUl6elZpK2VadHIzdldyOVNvVmtTU29ldEpjUGovRmdKREdnPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU5LjM2IiwibmFtZSI6InNha3lhc2luZ2hiaXN3YWwiLCJvaWQiOiJjMWUwYjY0Mi05Yjg2LTQ0N2UtYmM0ZS0zMWVlODg2ZjQ1MTciLCJwdWlkIjoiMTAwMzIwMDA5Mzg2NUEzNiIsInNjcCI6IlJlYWQuV3JpdGUiLCJzdWIiOiJXLUJlZlA2Wm9aZjBHMFZwYzZaM2d2TWN4eUpMNDRObjkzb3kyNjRMXzEwIiwidGlkIjoiNWI3ZWZkZjUtYzBlZC00MDI0LTg1MDgtOTY2ODIxYTJlYjI5IiwidW5pcXVlX25hbWUiOiJsaXZlLmNvbSNzYWt5YXNpbmdoYmlzd2FsQG91dGxvb2suY29tIiwidXRpIjoibFp2TkNjbjluRVNGazdHa0drdDNBQSIsInZlciI6IjEuMCJ9.YTnuANLw55pPydn9dJLvCLQP4H7U0dHgFfFB3hymLiwxrRlWhZYhWKtww8mzHefut8o0PW5_HPUkt_Vj-0GnjYR-jgAFFwhA59Xazb701c84uAV_bOh0FkcL3jGx7z5NDHOYVbD5T8_hC-BHDETZbTyFX3kGzvb0XNWDTYMXlC3yZ8KLE1SdAp2NrM6-UGjWF_ChwhcSjCXu-ICSBE2j9cgDG2g-ugr-VSLYNTq27NxujlBbwyLa3bCyjkp3aK6jMmoUKcMnaCSb-ojrKkti6V6Pp2A44Oz7NbvZXKF52fTf9xoaaX_jbkvGq6V8RKAUOksFdew-1fbBWqrbL2chxQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"deviceId\": \"d2e1fe29-52d0-41f3-9bd5-207d4224482b\",\r\n  \"dataType\": \"Temperature,\r\n  \"hardwareId\": \"SAMPLE_SENSOR_TEMPERATURE\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/sensors?includes=properties,types",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"sensors"
+					],
+					"query": [
+						{
+							"key": "includes",
+							"value": "properties,types"
+						}
+					]
+				},
+				"description": "Create device in space"
+			},
+			"response": []
+		},
+		{
+			"name": "Get  a Sensor by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU5MDA2LCJuYmYiOjE1NzgyNTkwMDYsImV4cCI6MTU3ODI2MjkwNiwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQWtEUEJEbWpaZEY2ZjA0Wi95a01KOWlJRTdzVFJCbU92L3V3SnRJWE5sTjQ4VUN2SU04YlZJNmROMXhWY2V3V1lOVjBRdElheU9zWDdYWlU3QW9GQ05RPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6InNHYlNXZXRYajAyeWw0TGVGMGxMQUEiLCJ2ZXIiOiIxLjAifQ.ThybljPqaGNcq-bWYa9fl-CxHFm4011eU7fQpSJrS1-FRk9MZ0AqCmtkPN3ne4gCz7G5X4kBYbhBxfTlF_dA_R7AZgMYd2TG8P8RDxUzIPhp1LMrenjlTT6-F2BsH3HyGXecspzOlv0fZGx9aIBR-1uYwPPtvU6f8GcTMpKTO-9q-rgarQfft6ny5uVTYA-YAqRBxiOnowRsdYSlsDP6V6Bu2iwK091nweUutQgzFtbAbGgysBFaKohM5Cam0p83tAtVIxbSzDuY4P0trTP1asiCulakmdeBO08ZfqU7rkHg-Ro0zx5FrI6hUI9iRw0RlUdSpg3E-1xBCiccz4rAMg",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"deviceId\": \"3fff6e0f-a7a9-4031-8017-63abebff69e9\",\r\n  \"dataType\": \"MOTION\",\r\n  \"hardwareId\": \"SAMPLE_SENSOR_MOTION\",\r\n},\r\n{\r\n  \"deviceId\": \"3fff6e0f-a7a9-4031-8017-63abebff69e9\",\r\n  \"dataType\": \"CarbonDioxide\",\r\n  \"hardwareId\": \"SAMPLE_SENSOR_CARBONDIOXIDE\",\r\n},\r\n{\r\n  \"deviceId\": \"3fff6e0f-a7a9-4031-8017-63abebff69e9\",\r\n  \"dataType\": \"Temperature,\r\n  \"hardwareId\": \"SAMPLE_SENSOR_TEMPERATURE\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/sensors/3128fb00-176f-4bf1-9ab2-53456aab9952",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"sensors",
+						"3128fb00-176f-4bf1-9ab2-53456aab9952"
+					]
+				},
+				"description": "Create device in space"
+			},
+			"response": []
+		},
+		{
+			"name": "Create matcher for space with device",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjUyNjU5LCJuYmYiOjE1NzgyNTI2NTksImV4cCI6MTU3ODI1NjU1OSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUhERnJoNVNjaEVQNGZBSnUyKytoZ090dmI1RkpHbzNXVkNaNEFuVUZlV2VhQXRuaWlsZVZ6WjNxTk5NazRqY09yZXFrWFhJVUljNXc0emxRQVVVaUN3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Ilk2NTR3bEhVRTBLakxCczNLLXhRQUEiLCJ2ZXIiOiIxLjAifQ.zQGv2A3gyPEXGJQ4OTBG6jI5ree8pe3_grg18yNHs9jFWRBWSzRo2KUgq5AtnwlA5uj7HA9CKZ6MwfA_ot0x6U0FK71ijQRoZEOGEbLBPz8-LDhNZDwa8hfP8eQuwYw_LyqUgWKJu-HSf6K3Dtgc8Q0F5lzVL_RasF2rxDyem8pm_f9LM0j4dmbd3SMkHahdN1rnQBZgIGUes10P9ikJfdkPT0ilP0U4CGrCYriVhrveteO-Rf0knKVtIxULzUxFPmdoqE59jRXifz02x0GLTy-9tYU5I7qNhWKLQt7iqIcUxNGmBaR3v1VXBdzZRrtIVSPoLIa9gv127yUv9MRZ6g",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\":\"Matcher JSON\",\n\t\"SpaceId\":\"985f8f5f-5648-4d7f-b5b1-1ef1693383f0\",\n\t\"Conditions\":[{\"Target\":\"Sensor\",\n\t\t\t\t\t\"Path\":\"$.dataType\",\n\t\t\t\t\t\"Value\":\"JSON\",\n\t\t\t\t\t\"Comparison\":\"Equals\"\n\t\t\t\t  }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/matchers",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"matchers"
+					]
+				},
+				"description": "Create matcher for space with device"
+			},
+			"response": []
+		},
+		{
+			"name": "Get matcher for All space",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjkyMDI4LCJuYmYiOjE1NzgyOTIwMjgsImV4cCI6MTU3ODI5NTkyOCwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQTlJWFYvWVl5MTNlam0reURyeGh0eVgrZVQwR2lFSFAvajJBWWs3blh5VlVTek12Rm1ka3IybnVMK0Y4YUV1SHJjWGFOcFpYeFk0Wjdud0JROWsrV3FnPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Ijh0VXpLZi1iOFVtWFVtVTRZcE5oQUEiLCJ2ZXIiOiIxLjAifQ.lPP2gP7WXaBco2MAuZKclzWkmTTwYtwASXKPEDTy-CKzVxrlD1XJ5Gw3kS_5oWvm1ebEPU1N6tqGlyA1zyc1DsOfSp82dQlIcVKvpqrUQZUKX4LTRwIfj6TuF8uAIcUKxIv4-ccIfkMczsQ8Fdcf2LDCAvDXz238uipxihmEhBSkyXV4tpXwQnVBNoOD3VGfsyH-8oBSly6Uz9O4L10AAotbwAgXNZaE8d1fn8aeRH2ox2QEVCf_An-JB6kd78vCqI_OeFv00MDUlSzmeYjvZq0uNN-VTX2AZ9NwIdN53XCaS26uquyul0r5zcPlk8VN-k6Aa8kZWxjqGAyhqc8gCw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\":\"Matcher Temperature\",\n\t\"SpaceId\":\"985f8f5f-5648-4d7f-b5b1-1ef1693383f0\",\n\t\"Conditions\":[{\"Target\":\"Sensor\",\n\t\t\t\t\t\"Path\":\"$.dataType\",\n\t\t\t\t\t\"Value\":\"Temperature\",\n\t\t\t\t\t\"Comparison\":\"Equals\"\n\t\t\t\t  }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/matchers?spaceId=01b7e36b-2205-42ed-91cb-ba0ac9433130&includes=conditions",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"matchers"
+					],
+					"query": [
+						{
+							"key": "spaceId",
+							"value": "01b7e36b-2205-42ed-91cb-ba0ac9433130"
+						},
+						{
+							"key": "includes",
+							"value": "conditions"
+						}
+					]
+				},
+				"description": "Create matcher for space with device"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Matcher  By ID",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjUyNjU5LCJuYmYiOjE1NzgyNTI2NTksImV4cCI6MTU3ODI1NjU1OSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUhERnJoNVNjaEVQNGZBSnUyKytoZ090dmI1RkpHbzNXVkNaNEFuVUZlV2VhQXRuaWlsZVZ6WjNxTk5NazRqY09yZXFrWFhJVUljNXc0emxRQVVVaUN3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Ilk2NTR3bEhVRTBLakxCczNLLXhRQUEiLCJ2ZXIiOiIxLjAifQ.zQGv2A3gyPEXGJQ4OTBG6jI5ree8pe3_grg18yNHs9jFWRBWSzRo2KUgq5AtnwlA5uj7HA9CKZ6MwfA_ot0x6U0FK71ijQRoZEOGEbLBPz8-LDhNZDwa8hfP8eQuwYw_LyqUgWKJu-HSf6K3Dtgc8Q0F5lzVL_RasF2rxDyem8pm_f9LM0j4dmbd3SMkHahdN1rnQBZgIGUes10P9ikJfdkPT0ilP0U4CGrCYriVhrveteO-Rf0knKVtIxULzUxFPmdoqE59jRXifz02x0GLTy-9tYU5I7qNhWKLQt7iqIcUxNGmBaR3v1VXBdzZRrtIVSPoLIa9gv127yUv9MRZ6g",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/api/v1.0/matchers/{ID}",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"api",
+						"v1.0",
+						"matchers",
+						"{ID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creates a UDF",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4Mjk3MTM4LCJuYmYiOjE1NzgyOTcxMzgsImV4cCI6MTU3ODMwMTAzOCwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQVp3Nyt1M0Fhei9zOEhHbXRlcTNLc00zOVN5YWlXR0dsN0lwc28yMkxWK2F4R3hvdGsrOG53QXN2TDFvUXVSVjlpSVVXdEJNWGMyVVNoNlI2TG9xOUdnPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IklFbHdxTmtwWGthQnQ2ZmIycm9vQUEiLCJ2ZXIiOiIxLjAifQ.lmx9qYqKT5sxDbZ4Bz3o5VLFL1B2ghk-mYOGNuTeY4ZHIjBsSe_S0w4kGwd6GAoVHwOoxLyoZlIrL8K0nDCgD5-tlDEjdnFq1Px5vr0-6vUjIfw80KGt6xooJYQn9xQE4nsrBo7hrNstbBZvcbMRVTuelN0dehVm5E7ziW-0j__Sxo_vyhTK1fbBZo8ZtpJF7Cs6d351jXeKls_RIdhB31oY4xGbuIQQhqzr-gzLoUsR9xCZIgppV00Mj6q_YVu0iCbbmmdrbc6yyfseh4rWzB17PP-a2r-eNKY5bOGILWupxTjRt9gQ4VqTe20lK5YrAXSBWkM46FQLQsjBYqjMfw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/userdefinedfunctions",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"userdefinedfunctions"
+					]
+				},
+				"description": "Creates a udf"
+			},
+			"response": []
+		},
+		{
+			"name": "Gets a list of UDFs",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4Mjk3MDEzLCJuYmYiOjE1NzgyOTcwMTMsImV4cCI6MTU3ODMwMDkxMywiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUJwbXZ4UDBKTlBhMEthUnpLYld0QXAyZEowZUJ0SEhuU0VTbHpjTmlFNVVMcGlBV3hrekpONDRFWmxGaS9IOWJKSzRCSTdyNW9PbFliWko3a1haY0t3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Il84US1VWUJRdGtxMUswN05oWWd0QUEiLCJ2ZXIiOiIxLjAifQ.lFaMN3pNwHNQThPo6OlgVSo-5A9gogBncln4iiHXQwiLdSGx-qswPNbB8fZBmqNDlwkxmjfjac2am7aYTPJXK9yVejQF2wnMb6KgGEZQ724qnply_3JB4y7bIRICbSqgZ1UO51oYMXguHiG7Qs-ZE93hnVgk6RH_MMDQg-cG1Sig9Fh6cMWYEVbsj2fip8rIgbvN3J6YhoBQYgLYFcI_ysBsDcH3sWYG339LilG1OoC7vQts2gCNRIV6b8NVHM5YNNDJom3Clt0N9jmiuSgG_s1gSRQ6Ypt6nopPZdWhN-3m-7b7BEdsNz67B6pdbHw07aLggGJVszxvy1ngJEeSoQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/userdefinedfunctions",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"userdefinedfunctions"
+					]
+				},
+				"description": "/api/v1.0/userdefinedfunctions"
+			},
+			"response": []
+		},
+		{
+			"name": "Gets a UDF",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4Mjk3MDEzLCJuYmYiOjE1NzgyOTcwMTMsImV4cCI6MTU3ODMwMDkxMywiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUJwbXZ4UDBKTlBhMEthUnpLYld0QXAyZEowZUJ0SEhuU0VTbHpjTmlFNVVMcGlBV3hrekpONDRFWmxGaS9IOWJKSzRCSTdyNW9PbFliWko3a1haY0t3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Il84US1VWUJRdGtxMUswN05oWWd0QUEiLCJ2ZXIiOiIxLjAifQ.lFaMN3pNwHNQThPo6OlgVSo-5A9gogBncln4iiHXQwiLdSGx-qswPNbB8fZBmqNDlwkxmjfjac2am7aYTPJXK9yVejQF2wnMb6KgGEZQ724qnply_3JB4y7bIRICbSqgZ1UO51oYMXguHiG7Qs-ZE93hnVgk6RH_MMDQg-cG1Sig9Fh6cMWYEVbsj2fip8rIgbvN3J6YhoBQYgLYFcI_ysBsDcH3sWYG339LilG1OoC7vQts2gCNRIV6b8NVHM5YNNDJom3Clt0N9jmiuSgG_s1gSRQ6Ypt6nopPZdWhN-3m-7b7BEdsNz67B6pdbHw07aLggGJVszxvy1ngJEeSoQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/userdefinedfunctions/8c0b9305-d157-4f57-b055-0a55b3996316",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"userdefinedfunctions",
+						"8c0b9305-d157-4f57-b055-0a55b3996316"
+					]
+				},
+				"description": "/api/v1.0/userdefinedfunctions"
+			},
+			"response": []
+		},
+		{
+			"name": "Gets the contents of a UDF",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4Mjk3MDEzLCJuYmYiOjE1NzgyOTcwMTMsImV4cCI6MTU3ODMwMDkxMywiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUJwbXZ4UDBKTlBhMEthUnpLYld0QXAyZEowZUJ0SEhuU0VTbHpjTmlFNVVMcGlBV3hrekpONDRFWmxGaS9IOWJKSzRCSTdyNW9PbFliWko3a1haY0t3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Il84US1VWUJRdGtxMUswN05oWWd0QUEiLCJ2ZXIiOiIxLjAifQ.lFaMN3pNwHNQThPo6OlgVSo-5A9gogBncln4iiHXQwiLdSGx-qswPNbB8fZBmqNDlwkxmjfjac2am7aYTPJXK9yVejQF2wnMb6KgGEZQ724qnply_3JB4y7bIRICbSqgZ1UO51oYMXguHiG7Qs-ZE93hnVgk6RH_MMDQg-cG1Sig9Fh6cMWYEVbsj2fip8rIgbvN3J6YhoBQYgLYFcI_ysBsDcH3sWYG339LilG1OoC7vQts2gCNRIV6b8NVHM5YNNDJom3Clt0N9jmiuSgG_s1gSRQ6Ypt6nopPZdWhN-3m-7b7BEdsNz67B6pdbHw07aLggGJVszxvy1ngJEeSoQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/userdefinedfunctions/8c0b9305-d157-4f57-b055-0a55b3996316/contents",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"userdefinedfunctions",
+						"8c0b9305-d157-4f57-b055-0a55b3996316",
+						"contents"
+					]
+				},
+				"description": "/api/v1.0/userdefinedfunctions"
+			},
+			"response": []
+		},
+		{
+			"name": "Creates a role assignment",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjUyNjU5LCJuYmYiOjE1NzgyNTI2NTksImV4cCI6MTU3ODI1NjU1OSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUhERnJoNVNjaEVQNGZBSnUyKytoZ090dmI1RkpHbzNXVkNaNEFuVUZlV2VhQXRuaWlsZVZ6WjNxTk5NazRqY09yZXFrWFhJVUljNXc0emxRQVVVaUN3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Ilk2NTR3bEhVRTBLakxCczNLLXhRQUEiLCJ2ZXIiOiIxLjAifQ.zQGv2A3gyPEXGJQ4OTBG6jI5ree8pe3_grg18yNHs9jFWRBWSzRo2KUgq5AtnwlA5uj7HA9CKZ6MwfA_ot0x6U0FK71ijQRoZEOGEbLBPz8-LDhNZDwa8hfP8eQuwYw_LyqUgWKJu-HSf6K3Dtgc8Q0F5lzVL_RasF2rxDyem8pm_f9LM0j4dmbd3SMkHahdN1rnQBZgIGUes10P9ikJfdkPT0ilP0U4CGrCYriVhrveteO-Rf0knKVtIxULzUxFPmdoqE59jRXifz02x0GLTy-9tYU5I7qNhWKLQt7iqIcUxNGmBaR3v1VXBdzZRrtIVSPoLIa9gv127yUv9MRZ6g",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"roleId\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"objectId\": \"string\",\r\n  \"objectIdType\": \"UserId\",\r\n  \"tenantId\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"path\": \"string\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/roleassignments",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"roleassignments"
+					]
+				},
+				"description": "Creates a role assignment"
+			},
+			"response": []
+		},
+		{
+			"name": "Gets role assignments under a given path",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjUyNjU5LCJuYmYiOjE1NzgyNTI2NTksImV4cCI6MTU3ODI1NjU1OSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUhERnJoNVNjaEVQNGZBSnUyKytoZ090dmI1RkpHbzNXVkNaNEFuVUZlV2VhQXRuaWlsZVZ6WjNxTk5NazRqY09yZXFrWFhJVUljNXc0emxRQVVVaUN3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Ilk2NTR3bEhVRTBLakxCczNLLXhRQUEiLCJ2ZXIiOiIxLjAifQ.zQGv2A3gyPEXGJQ4OTBG6jI5ree8pe3_grg18yNHs9jFWRBWSzRo2KUgq5AtnwlA5uj7HA9CKZ6MwfA_ot0x6U0FK71ijQRoZEOGEbLBPz8-LDhNZDwa8hfP8eQuwYw_LyqUgWKJu-HSf6K3Dtgc8Q0F5lzVL_RasF2rxDyem8pm_f9LM0j4dmbd3SMkHahdN1rnQBZgIGUes10P9ikJfdkPT0ilP0U4CGrCYriVhrveteO-Rf0knKVtIxULzUxFPmdoqE59jRXifz02x0GLTy-9tYU5I7qNhWKLQt7iqIcUxNGmBaR3v1VXBdzZRrtIVSPoLIa9gv127yUv9MRZ6g",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"roleId\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"objectId\": \"string\",\r\n  \"objectIdType\": \"UserId\",\r\n  \"tenantId\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"path\": \"string\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/roleassignments",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"roleassignments"
+					]
+				},
+				"description": "Creates a role assignment"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Values of temperature Sensor",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU5ODgwLCJuYmYiOjE1NzgyNTk4ODAsImV4cCI6MTU3ODI2Mzc4MCwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQWNmUnlVMmJSTXZCVXg4dS9RV0R5UXpGWkJ5NHh3TGxlanhMeGN3S1JYTlBtczlZYTgvRUNRL2ZkU1k2L2lEVHJjZkJka3NSK3lGbFl2Zm40dzM0eThnPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6ImRETUtoVnYzRVVTX0Y2TmY0OS1qQUEiLCJ2ZXIiOiIxLjAifQ.nBJOqtPQ5ROaR72SP_ydvblbB6quFJp6u-DX8syXKaDTBPfEja60aoeU70rSFKZmphriaw6w1Zh5UOkGVoKwzgR85aVPdWq0qjiWdoAUVSCTlsl0WywrCbfRIdgOy3POxvx7Ly22Me_yYMTu1Ts4SJSMrpe0q1q5UfWxlIojSBaBvyQFHGDqi3jLGsp6oWpchIXE_zUNI7umTCNxwFPxOhqI73gaOct70d9Tbn2coim6HS2tlul6Ck-6ScMpb1PB1vERaLQR9s9NokDoc3T65uRC_UlJOqYwDfewOghwfPTfOHNqo3Cmh7UcCPQu5tVnxOKj2_9Sz-whGW3LK0-ouw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/sensors/8cdae6d0-287d-45ee-b473-17a980a555d4/value",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"sensors",
+						"8cdae6d0-287d-45ee-b473-17a980a555d4",
+						"value"
+					]
+				},
+				"description": "Post Values to temperature Sensor"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Values of JSON Sensor",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjU5ODgwLCJuYmYiOjE1NzgyNTk4ODAsImV4cCI6MTU3ODI2Mzc4MCwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQWNmUnlVMmJSTXZCVXg4dS9RV0R5UXpGWkJ5NHh3TGxlanhMeGN3S1JYTlBtczlZYTgvRUNRL2ZkU1k2L2lEVHJjZkJka3NSK3lGbFl2Zm40dzM0eThnPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6ImRETUtoVnYzRVVTX0Y2TmY0OS1qQUEiLCJ2ZXIiOiIxLjAifQ.nBJOqtPQ5ROaR72SP_ydvblbB6quFJp6u-DX8syXKaDTBPfEja60aoeU70rSFKZmphriaw6w1Zh5UOkGVoKwzgR85aVPdWq0qjiWdoAUVSCTlsl0WywrCbfRIdgOy3POxvx7Ly22Me_yYMTu1Ts4SJSMrpe0q1q5UfWxlIojSBaBvyQFHGDqi3jLGsp6oWpchIXE_zUNI7umTCNxwFPxOhqI73gaOct70d9Tbn2coim6HS2tlul6Ck-6ScMpb1PB1vERaLQR9s9NokDoc3T65uRC_UlJOqYwDfewOghwfPTfOHNqo3Cmh7UcCPQu5tVnxOKj2_9Sz-whGW3LK0-ouw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/sensors/8cdae6d0-287d-45ee-b473-17a980a555d4/value",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"sensors",
+						"8cdae6d0-287d-45ee-b473-17a980a555d4",
+						"value"
+					]
+				},
+				"description": "Post Values to temperature Sensor"
+			},
+			"response": []
+		},
+		{
+			"name": "Creates a blob",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "/api/v1.0/devices/blobs"
+			},
+			"response": []
+		},
+		{
+			"name": "Get the  blob latest value for a space",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4NDA4OTYyLCJuYmYiOjE1Nzg0MDg5NjIsImV4cCI6MTU3ODQxMjg2MiwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQVZBN0tpaGNHRWpoSXVqL2w5UlBKbzlvbExWVGxFa2hBSlRMMkl6blBNMitPa1Bjb2krUkIzbWx1Z1ROVWxKYnFCRGZiUXpHRVJ3dnVJeVJWdXA2NmlnPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU5LjExNiIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IlIzb1FMUS0tVGtxai1qY0pKdkhFQUEiLCJ2ZXIiOiIxLjAifQ.XN0_iRtiw_sazMU1UY4TGLYXmg2r28DmUMRbtftSgzPXZTUQAFxQ5xylsR_d7v_bMRQHHSva9L2HDdjzBf_jpRbjI-HGcKjZnzvyipQJFyHROlIxHwsiMRfJARMIuTRLuSmG_BVoZrA68pT0pA8VnA-AH1cC8eTjkJsfP_apxfTZbK-6J-HlWLd32m0iPXEUlu4-b3KvsLgmPmpCLDmFjaUy2Psy3HNAYjOTsIRAzjPk0WuxB8vfwkIs-Udp7JGTOQrlxMgt0M7ZFZpyKVF9Lt-8kaZ3nn8QZZj670AuLjyyTOTzNLPxD2jzeDSfRU-v-Fnsi8QqBHhMRHRdYS_R9A",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces/blobs/3b43e717-10ec-42d0-9bf9-d00133f20f74/contents/latest",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces",
+						"blobs",
+						"3b43e717-10ec-42d0-9bf9-d00133f20f74",
+						"contents",
+						"latest"
+					]
+				},
+				"description": "/api/v1.0/devices/blobs"
+			},
+			"response": []
+		},
+		{
+			"name": "Get the  blob latest value for a device",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4NDA4OTYyLCJuYmYiOjE1Nzg0MDg5NjIsImV4cCI6MTU3ODQxMjg2MiwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQVZBN0tpaGNHRWpoSXVqL2w5UlBKbzlvbExWVGxFa2hBSlRMMkl6blBNMitPa1Bjb2krUkIzbWx1Z1ROVWxKYnFCRGZiUXpHRVJ3dnVJeVJWdXA2NmlnPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU5LjExNiIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6IlIzb1FMUS0tVGtxai1qY0pKdkhFQUEiLCJ2ZXIiOiIxLjAifQ.XN0_iRtiw_sazMU1UY4TGLYXmg2r28DmUMRbtftSgzPXZTUQAFxQ5xylsR_d7v_bMRQHHSva9L2HDdjzBf_jpRbjI-HGcKjZnzvyipQJFyHROlIxHwsiMRfJARMIuTRLuSmG_BVoZrA68pT0pA8VnA-AH1cC8eTjkJsfP_apxfTZbK-6J-HlWLd32m0iPXEUlu4-b3KvsLgmPmpCLDmFjaUy2Psy3HNAYjOTsIRAzjPk0WuxB8vfwkIs-Udp7JGTOQrlxMgt0M7ZFZpyKVF9Lt-8kaZ3nn8QZZj670AuLjyyTOTzNLPxD2jzeDSfRU-v-Fnsi8QqBHhMRHRdYS_R9A",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/devices/blobs/652bb24a-a50a-4373-a412-4e1cee634a4b/contents/latest",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"devices",
+						"blobs",
+						"652bb24a-a50a-4373-a412-4e1cee634a4b",
+						"contents",
+						"latest"
+					]
+				},
+				"description": "/api/v1.0/devices/blobs"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Custom SensorDataType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Spaces Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MzA3OTEyLCJuYmYiOjE1NzgzMDc5MTIsImV4cCI6MTU3ODMxMTgxMiwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUdtemhaY3RvTWl4dWZhMkJSNDFsRFU0RXpGdnVTdlZwZFp6MWh5UzhrUDlSWXM3ZUpmbzFpU0g1QnQ3dDdhTGZCcmJkcEJ4N1RiZVdkU2IzUURGL1dBPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6ImlhWWd6cjhuZmtDNGdMWnRBdDVyQUEiLCJ2ZXIiOiIxLjAifQ.PPq3hOokbMd1EP63D9tgc2Xg5LVRkMrFR4ngdovaQDaSWkA6p0CpAgmAQwvI1rHFNG9TlozDk5nyXF2TJ6er5iStYJeSeh0R3cRHXZ-KrDWy9hu9WvVGPpGC1btFzoKGgZDZ2-fQDX3oTEFUwpkFUjSpeq2BbaAAEZnZnBYO2IIOPoDYKbMVNqVd_rubqW0emnepqiXI4aPB3ClS6oCB0JkfrYln7Qnn2thd7c5DR8kamJSwgtFOHrLZ4qArNjEEKL4PtjQ6KzZ0hUTwb_g-aitFYmRNHCdPm5Lgz_NecMmHjHAcb9cRRrq3ImJ9iqRF6SaFiBHF3H4TXKecxScHGQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://super.northeurope.azuresmartspaces.net/management/api/v1.0/spaces",
+					"protocol": "https",
+					"host": [
+						"super",
+						"northeurope",
+						"azuresmartspaces",
+						"net"
+					],
+					"path": [
+						"management",
+						"api",
+						"v1.0",
+						"spaces"
+					]
+				},
+				"description": "This adds a building by calling space api"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSIsImtpZCI6InBpVmxsb1FEU01LeGgxbTJ5Z3FHU1ZkZ0ZwQSJ9.eyJhdWQiOiIwYjA3ZjQyOS05ZjRiLTQ3MTQtOTM5Mi1jYzVlOGU4MGM4YjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81YjdlZmRmNS1jMGVkLTQwMjQtODUwOC05NjY4MjFhMmViMjkvIiwiaWF0IjoxNTc4MjUyNjU5LCJuYmYiOjE1NzgyNTI2NTksImV4cCI6MTU3ODI1NjU1OSwiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhOQUFBQUhERnJoNVNjaEVQNGZBSnUyKytoZ090dmI1RkpHbzNXVkNaNEFuVUZlV2VhQXRuaWlsZVZ6WjNxTk5NazRqY09yZXFrWFhJVUljNXc0emxRQVVVaUN3PT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMzQwMDEyMEQzMzM0QiIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIyM2JmMDM0OC1kYTk4LTQ3NTktODQ4NC03NDM0MmRlNWIyMjAiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InNha3lhc2luZ2hiaXN3YWxAb3V0bG9vay5jb20iLCJmYW1pbHlfbmFtZSI6ImJpc3dhbCIsImdpdmVuX25hbWUiOiJzYWt5YXNpbmdoIiwiaWRwIjoibGl2ZS5jb20iLCJpcGFkZHIiOiIxMTcuMjE3LjU2LjEyMSIsIm5hbWUiOiJzYWt5YXNpbmdoYmlzd2FsIiwib2lkIjoiYzFlMGI2NDItOWI4Ni00NDdlLWJjNGUtMzFlZTg4NmY0NTE3IiwicHVpZCI6IjEwMDMyMDAwOTM4NjVBMzYiLCJzY3AiOiJSZWFkLldyaXRlIiwic3ViIjoiVy1CZWZQNlpvWmYwRzBWcGM2WjNndk1jeHlKTDQ0Tm45M295MjY0TF8xMCIsInRpZCI6IjViN2VmZGY1LWMwZWQtNDAyNC04NTA4LTk2NjgyMWEyZWIyOSIsInVuaXF1ZV9uYW1lIjoibGl2ZS5jb20jc2FreWFzaW5naGJpc3dhbEBvdXRsb29rLmNvbSIsInV0aSI6Ilk2NTR3bEhVRTBLakxCczNLLXhRQUEiLCJ2ZXIiOiIxLjAifQ.zQGv2A3gyPEXGJQ4OTBG6jI5ree8pe3_grg18yNHs9jFWRBWSzRo2KUgq5AtnwlA5uj7HA9CKZ6MwfA_ot0x6U0FK71ijQRoZEOGEbLBPz8-LDhNZDwa8hfP8eQuwYw_LyqUgWKJu-HSf6K3Dtgc8Q0F5lzVL_RasF2rxDyem8pm_f9LM0j4dmbd3SMkHahdN1rnQBZgIGUes10P9ikJfdkPT0ilP0U4CGrCYriVhrveteO-Rf0knKVtIxULzUxFPmdoqE59jRXifz02x0GLTy-9tYU5I7qNhWKLQt7iqIcUxNGmBaR3v1VXBdzZRrtIVSPoLIa9gv127yUv9MRZ6g",
+				"type": "string"
+			},
+			{
+				"key": "tokenType",
+				"value": "Bearer",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8170e45b-a046-4287-a7fe-f43606088786",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ca745de6-f7d1-4c92-9a82-5063a1fae05d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
